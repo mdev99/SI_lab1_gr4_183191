@@ -1,21 +1,66 @@
 class Point {
-	String id, color;
-	double x,y;
+    String id, color;
+    double x, y;
 
-	//TODO add new variable
+    public Point(String id, String color, double x, double y) {
+        this.id = id;
+        this.color = color;
+        this.x = x;
+        this.y = y;
+    }
 
-	//TODO constructor
+    public String getId() {
+        return id;
+    }
 
-	//TODO setters and getters
+    public String getColor() {
+        return color;
+    }
 
-	public void move (char xDirection, char yDirection) {
-		//TODO
-	}
+    public double getX() {
+        return x;
+    }
 
-	public void draw () {
-		//TODO
-	}
+    public double getY() {
+        return y;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
 
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public void move(char xDirection, char yDirection) {
+        switch (xDirection) {
+            case ('L'):
+                this.x--;
+                break;
+            case ('R'):
+                this.x++;
+                break;
+        }
+        switch (yDirection) {
+            case ('U'):
+                this.y++;
+                break;
+            case ('D'):
+                this.y--;
+                break;
+        }
+    }
+
+    public void draw() {
+        System.out.println(String.format("ID: %s, X: %f, Y: %f", this.id, this.x, this.y));
+    }
 }
