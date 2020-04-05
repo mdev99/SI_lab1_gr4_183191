@@ -63,4 +63,19 @@ class Point {
     public void draw() {
         System.out.println(String.format("ID: %s, X: %f, Y: %f", this.id, this.x, this.y));
     }
+
+}
+
+
+public class Canvas {
+    List Point = new Point();
+
+    public Canvas(List point) {
+       this.Point = point;
+    }
+
+    public void printCoordinates() {
+        System.out.println(String.format("ID: %s, X: %f, Y: %f", this.Point.id, this.Point.x, this.Point.y));
+    }
+
 }
