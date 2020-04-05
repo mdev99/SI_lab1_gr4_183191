@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			Link do git repo:https://github.com/mdev99/SI_lab1_gr4_183191
+
+------------------------------------------------------------------------------------------------#:-----------------------------------------------------------------
+
+#1: Ja kloniram remote repo so komandata: $ git clone https://github.com/finkiSI/SI_lab1_gr4.git.
+#2: Go preimenuvam repoto od SI_lab1_gr4 vo SI_lab1_gr4_183191.
+#3: Brisenjeto na remote repoto sto e povrzanano so lokalnoto go pravam so: $ git remote remove origin.
+#4: Novoto remote reoi go povrzuvam so lokalnoto so slednive komandi:
+	$ git remote add origin https://github.com/mdev99/SI_lab1_gr4_183191.git ?
+	$ git push -u origin master.
+#5: sinhronizacijata ja pravam so: $ git pull 
+#6: commit vo slednive cekori: 
+	$ git add Points.csv, 
+	$ git commit 
+	- vo vim ja pisuvam porakata "Points.csv file added", a za izlez od vimL esc + ":wq",
+	$ git push.
+	(istata postapka se povtoruva za site commits).
+#7: Spojuvanjeto na master branchot so canvasFeature branchot so slednava komanda: $ git merge origin/canvasFeature.
+
+---------------------------------------------------------------- Git Log-------------------------------------------------------------------------------------------
+
+asus@DESKTOP-DRQL1G9 MINGW64 ~/Desktop/SI_lab1_gr4_183191 (master)
+$ git log
+commit ffcb1bd6ab95e5da056296a8fe34f66e45319f31 (HEAD -> master, origin/master)
+Author: mdev99 <legijata99@gmail.com>
+Date:   Sun Apr 5 19:19:37 2020 +0200
+
+    Points.csv file added
+
+commit 53c48b138190349db2f4df73975dafb2c7e94e60
+Author: mdev99 <legijata99@gmail.com>
+Date:   Sun Apr 5 19:18:04 2020 +0200
+
+    point class finished
+
+commit e7bf14176e47c0f130cd0256bbe42dca2f07d606 (origin/canvasFeature)
+Author: mdev99 <legijata99@gmail.com>
+Date:   Sun Apr 5 18:58:36 2020 +0200
+
+    point class finished
+
+commit 7ad9c65decb01efb8a58731592c447bca3e759e8
+Author: mdev99 <legijata99@gmail.com>
+Date:   Sun Apr 5 18:15:17 2020 +0200
+
+    Color variable added
+:
